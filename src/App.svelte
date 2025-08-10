@@ -36,7 +36,7 @@
   function handleCollectionClick(collectionName) {
     selectedCollection = {
       name: collectionName,
-      coll: collection[collectionName] || "Biography not available.",
+      coll: collection[collectionName] || "Description not available.",
       items: data.filter((item) => item.collection === collectionName),
     };
     showCollectionPopup = true;
@@ -49,11 +49,17 @@
     selectedCollection = null;
   }
 
-  const allTypes = [...new Set(data.map((d) => d.type))];
+  const allTypes = [...new Set(data.map((d) => d.type))].sort((a, b) =>
+    a.localeCompare(b),
+  );
   const allTerms = [...new Set(data.flatMap((d) => d.terms))];
-  const visibleTerms = ["Traditional ecological knowledge", "Ecofeminism"];
-  const allLanguages = [...new Set(data.flatMap((d) => d.languages))];
-  const allLoc = [...new Set(data.flatMap((d) => d.location))];
+  const visibleTerms = ["Traditional ecological knowledge", "Women rights"];
+  const allLanguages = [...new Set(data.flatMap((d) => d.languages))].sort(
+    (a, b) => a.localeCompare(b),
+  );
+  const allLoc = [...new Set(data.flatMap((d) => d.location))].sort((a, b) =>
+    a.localeCompare(b),
+  );
 
   function toggle(set, val) {
     const next = new Set(set);

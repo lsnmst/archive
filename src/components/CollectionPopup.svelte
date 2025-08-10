@@ -24,7 +24,7 @@
           <tr>
             <td>{item.type}</td>
             <td class="termspopup">{item.terms.join(", ")}</td>
-            <td>
+            <td class="title">
               <a href={item.url} target="_blank" rel="noopener noreferrer">
                 {item.title}
               </a>
@@ -78,8 +78,15 @@
     color: #444;
   }
 
+  h2 {
+    font-style: italic;
+    font-size: 2rem !important;
+    line-height: 1.8rem !important;
+  }
+
   .bio {
     font-style: italic;
+    line-height: 1.1rem;
     margin-bottom: 1rem;
     color: #555;
   }
@@ -98,6 +105,8 @@
     text-align: left;
     vertical-align: top;
     color: #444;
+    font-size: 1rem;
+    line-height: 1.1rem;
   }
 
   .collection-table th {
@@ -116,6 +125,11 @@
     text-decoration: underline;
   }
 
+  .title {
+    font-style: italic;
+    font-size: 1.5rem !important;
+    line-height: 1.4rem !important;
+  }
 
   @media (max-width: 768px) {
     .popup-backdrop {

@@ -49,7 +49,7 @@
                     />
                 {/if}
                 {#if item.featureDescription}
-                    <span class="featured-desc">{item.featureDescription}</span>
+                    <span class="featured-desc">{@html item.featureDescription}</span>
                 {/if}
             </div>
         {/if}
