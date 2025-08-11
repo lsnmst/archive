@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import ArchiveCard from "./components/ArchiveCard.svelte";
   import AuthorPopup from "./components/AuthorPopup.svelte";
   import CollectionPopup from "./components/CollectionPopup.svelte";
@@ -17,6 +18,23 @@
   let showPopup = false;
   let selectedCollection = null;
   let showCollectionPopup = false;
+
+  let mounted = false;
+
+  onMount(() => {
+    const params = new URLSearchParams(window.location.search);
+    search = params.get("search") || "";
+    selectedType = params.get("type") || "";
+    selectedLanguages = params.get("lang") || "";
+    selectedLoc = params.get("loc") || "";
+    const terms = params.get("terms");
+    selectedTerms = terms ? new Set(terms.split(",")) : new Set();
+
+    // Force initial sort by year descending
+    sortKey = "year";
+    ascending = false;
+    mounted = true;
+  });
 
   export let author = "";
   export let coll = "";
@@ -53,7 +71,11 @@
     a.localeCompare(b),
   );
   const allTerms = [...new Set(data.flatMap((d) => d.terms))];
-  const visibleTerms = ["Traditional ecological knowledge", "Women rights"];
+  const visibleTerms = [
+    "Traditional ecological knowledge",
+    "Women rights",
+    "Cartography studies",
+  ];
   const allLanguages = [...new Set(data.flatMap((d) => d.languages))].sort(
     (a, b) => a.localeCompare(b),
   );
@@ -126,18 +148,20 @@
     }
   }
 
-  $: updateURL();
+  $: if (mounted) updateURL();
 
   function updateURL() {
     const params = new URLSearchParams();
-
     if (search) params.set("search", search);
     if (selectedType) params.set("type", selectedType);
     if (selectedLanguages) params.set("lang", selectedLanguages);
     if (selectedLoc) params.set("loc", selectedLoc);
     if (selectedTerms.size) params.set("terms", [...selectedTerms].join(","));
 
-    const newURL = `${window.location.pathname}?${params.toString()}`;
+    const query = params.toString();
+    const newURL = query
+      ? `${window.location.pathname}?${query}`
+      : window.location.pathname;
     history.replaceState(null, "", newURL);
   }
 </script>

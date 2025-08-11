@@ -1,6 +1,6 @@
 const bios = {
     "Stefano Bovio":
-        "The digital cartographer with whom I started, the greatest experimenter I have ever met, who encouraged me to achieve the impossible. And what a coincidence, he was born 400 metres from where I was born.<br/><br/>Website: <a target='blank' href='https://www.stefanobovio.it/'>stefanobovio.it</a>",
+        "The digital cartographer with whom I started, the greatest experimenter I have ever met, who proved to me that the impossible can be achieved. And what a coincidence, he was born 400 metres from where I was born.<br/><br/>Website: <a target='blank' href='https://www.stefanobovio.it/'>stefanobovio.it</a>",
     "Raffaele Pe":
         "Architect and countertenor.<br/><br/>Website: <a target='blank' href='https://www.laliradiorfeo.it/'>Raffaele Pe e La Lira di Orfeo</a>",
     "Alessandra Sammartino":
@@ -44,7 +44,13 @@ const bios = {
     "Rosine Nsimire Hamuli":
         "Executive Directress of Alliance pour la Vie ASBL",
     "Droits, Environnement et Citoyenneté":
-        "Congolese platform for dialogue and debate on today's major environmental challenges. Its members campaign for change, lobby and advocate for the protection of human rights and environmental defenders."
+        "Congolese platform for dialogue and debate on today's major environmental challenges. Its members campaign for change, lobby and advocate for the protection of human rights and environmental defenders.",
+    "Massimiliano Lepratti":
+        "Coordinator and researcher in the field of ecological transition of the economy at Economia e sostenibilità (EStà).",
+    "Roberto Romano":
+        "Economist",   
+    "Chan Ku Ber Fur":
+        "Women farmers cooperative"
     };
 
 export default bios;

@@ -49,13 +49,15 @@
                     />
                 {/if}
                 {#if item.featureDescription}
-                    <span class="featured-desc">{@html item.featureDescription}</span>
+                    <span class="featured-desc"
+                        >{@html item.featureDescription}</span
+                    >
                 {/if}
             </div>
         {/if}
     </td>
 
-    <td class:highlight={isFeatured} data-label="with">
+    <td class:highlight={isFeatured} data-label="with" data-authors-cell>
         {#each item.authors as author, i}
             <span
                 class="clickable"
@@ -88,7 +90,7 @@
     }
     td.collection:not(:empty) {
         background: rgba(214, 242, 255, 1) !important;
-        cursor: help;
+        cursor: pointer;
     }
     td.collection span:not(:empty) {
         background: rgba(214, 242, 255, 1);
@@ -200,6 +202,10 @@
             border-bottom: 1px solid #eee;
         }
 
+        td[data-authors-cell]:empty {
+            display: none;
+        }
+
         td::before {
             content: attr(data-label);
             font-weight: bold;
@@ -215,6 +221,9 @@
             text-decoration: none;
         }
         .featured-box {
+            display: none;
+        }
+        .featured-desc {
             display: none;
         }
         .highlight {
@@ -235,6 +244,9 @@
         .collection {
             width: 88vw;
             padding: 10px;
+        }
+        .clickable {
+            margin-right: 1em;
         }
     }
 </style>
