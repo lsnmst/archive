@@ -15,6 +15,7 @@
   let selectedLanguages = "";
   let selectedLoc = "";
   let selectedAuthor = null;
+  let selectedAuthorFilter = "";
   let showPopup = false;
   let selectedCollection = null;
   let showCollectionPopup = false;
@@ -27,6 +28,7 @@
     selectedType = params.get("type") || "";
     selectedLanguages = params.get("lang") || "";
     selectedLoc = params.get("loc") || "";
+    selectedAuthorFilter = params.get("author") || "";
     const terms = params.get("terms");
     selectedTerms = terms ? new Set(terms.split(",")) : new Set();
 
@@ -41,6 +43,7 @@
   export let items = [];
 
   function handleAuthorClick(author) {
+    selectedAuthorFilter = author;
     selectedAuthor = {
       name: author,
       bio: bios[author] || "Biography not available.",
@@ -113,8 +116,19 @@
     const matchLoc =
       !selectedLoc ||
       (Array.isArray(item.location) && item.location.includes(selectedLoc));
+    const matchAuthor =
+      !selectedAuthorFilter ||
+      (Array.isArray(item.authors) &&
+        item.authors.includes(selectedAuthorFilter));
 
-    return matchSearch && matchType && matchTerms && matchLang && matchLoc;
+    return (
+      matchSearch &&
+      matchType &&
+      matchTerms &&
+      matchLang &&
+      matchLoc &&
+      matchAuthor
+    );
   });
 
   $: sortedData = sortKey
@@ -156,6 +170,7 @@
     if (selectedType) params.set("type", selectedType);
     if (selectedLanguages) params.set("lang", selectedLanguages);
     if (selectedLoc) params.set("loc", selectedLoc);
+    if (selectedAuthorFilter) params.set("author", selectedAuthorFilter);
     if (selectedTerms.size) params.set("terms", [...selectedTerms].join(","));
 
     const query = params.toString();
@@ -168,7 +183,11 @@
 
 <div class="header-section">
   <div class="header-title">
-    <h1>Alessandro</h1>
+    <h1>
+      <a href="/archive/" style="text-decoration:none; color:inherit;">
+        Alessandro
+      </a>
+    </h1>
   </div>
   <div class="header-description">
     <p>

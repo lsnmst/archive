@@ -221,10 +221,21 @@
             text-decoration: none;
         }
         .featured-box {
-            display: none;
+            display: flex;
+            flex-direction: column; /* stack vertically */
+            align-items: center; /* center horizontally */
+            padding: 0.5rem;
+            border: none;
+            gap: 0.5rem;
+        }
+        .featured-img {
+            max-width: 90%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
         .featured-desc {
-            display: none;
+            display: none; /* hide description text */
         }
         .highlight {
             background: none;
@@ -240,6 +251,7 @@
         .title {
             font-size: 1.7em;
             width: 88vw;
+            display: flow-root;
         }
         .collection {
             width: 88vw;
