@@ -222,8 +222,8 @@
         }
         .featured-box {
             display: flex;
-            flex-direction: column; /* stack vertically */
-            align-items: center; /* center horizontally */
+            flex-direction: column; 
+            align-items: center;
             padding: 0.5rem;
             border: none;
             gap: 0.5rem;
@@ -235,7 +235,7 @@
             margin: 0 auto;
         }
         .featured-desc {
-            display: none; /* hide description text */
+            display: none;
         }
         .highlight {
             background: none;

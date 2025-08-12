@@ -25,14 +25,19 @@
   onMount(() => {
     const params = new URLSearchParams(window.location.search);
     search = params.get("search") || "";
+
     selectedType = params.get("type") || "";
     selectedLanguages = params.get("lang") || "";
     selectedLoc = params.get("loc") || "";
-    selectedAuthorFilter = params.get("author") || "";
+
     const terms = params.get("terms");
     selectedTerms = terms ? new Set(terms.split(",")) : new Set();
 
-    // Force initial sort by year descending
+    const authorParam = params.get("author");
+    if (authorParam) {
+      handleAuthorClick(authorParam, true);
+    }
+
     sortKey = "year";
     ascending = false;
     mounted = true;
@@ -42,8 +47,7 @@
   export let coll = "";
   export let items = [];
 
-  function handleAuthorClick(author) {
-    selectedAuthorFilter = author;
+  function handleAuthorClick(author, fromURL = false) {
     selectedAuthor = {
       name: author,
       bio: bios[author] || "Biography not available.",
@@ -52,6 +56,15 @@
       ),
     };
     showPopup = true;
+
+    if (fromURL) {
+      selectedAuthorFilter = author;
+      search = "";
+      selectedType = "";
+      selectedLanguages = "";
+      selectedLoc = "";
+      selectedTerms.clear();
+    }
   }
 
   function handleCollectionClick(collectionName) {
@@ -162,6 +175,19 @@
     }
   }
 
+  function resetFilters() {
+    search = "";
+    selectedType = "";
+    selectedTerms = new Set();
+    selectedLanguages = "";
+    selectedLoc = "";
+    selectedAuthorFilter = "";
+    selectedAuthor = null;
+    selectedCollection = null;
+    showPopup = false;
+    showCollectionPopup = false;
+  }
+
   $: if (mounted) updateURL();
 
   function updateURL() {
@@ -249,6 +275,8 @@
       <option value={loc}>{loc}</option>
     {/each}
   </select>
+
+  <button on:click={resetFilters}>Reset</button>
 </div>
 
 <main class="archive">
@@ -266,7 +294,7 @@
             >{sortKey === "title" ? (ascending ? "▲" : "▼") : "▲▼"}</span
           >
         </th>
-        <th class="sortable" on:click={() => sortBy("authors")}>
+        <th class="clickable" on:click={() => handleAuthorClick(author, false)}>
           Co-actors <span
             >{sortKey === "authors" ? (ascending ? "▲" : "▼") : "▲▼"}</span
           >
@@ -481,6 +509,21 @@
     border-radius: 4px;
   }
 
+  .filters button {
+    padding: 0.4em 0.75em;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+    user-select: none;
+    border: 1px #a255e9 solid;
+  }
+  .filters button:hover {
+    background-color: #f2e4ff;
+    color: #a255e9;
+  }
+
   .multi-select {
     display: flex;
     flex-wrap: wrap;
@@ -552,6 +595,9 @@
       margin-top: 0;
       flex-direction: column;
       padding: 1rem 2rem;
+    }
+    .filters button {
+      padding: 0.75em 0.75em;
     }
   }
 </style>
