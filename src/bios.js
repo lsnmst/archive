@@ -16,9 +16,9 @@ const bios = {
     "Antonella Contin":
         "Arch. Ph.D. is Research Associate at DAStU / Department of Architecture and Urban Studies, School of Architecture Urban Planning Construction Engineering at University of Politecnico di Milano.",
     "Matteo Giacomelli":
-        "Postdoc researcher, Department of Architecture and Urban studies, Politecnico di Milano. Together with Fulvia Calcagni, he demonstrated that academia is not necessarily elitist and knows how to work with and care for communities and territories.",
+        "Postdoc researcher, Department of Architecture and Urban studies, Politecnico di Milano. It warms my heart that people like him prove that academia is not necessarily elitist and that researchers know how to work with and care for communities and territories.",
     "Fulvia Calcagni":
-        "Postdoctoral researcher at Humboldt University of Berlin. Together with Matteo Giacomelli, she demonstrated that academia is not necessarily elitist and knows how to work with and care for communities and territories.",
+        "Postdoctoral researcher at Humboldt University of Berlin and University of Haifa. It warms my heart that people like her prove that academia is not necessarily elitist and that researchers know how to work with and care for communities and territories.",
     "Alessandro Frigerio":
         "Urbanist and architect",
     "Joy Mutai":

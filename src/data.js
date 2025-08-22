@@ -476,6 +476,23 @@ export default [
         featureDescription: "",
     },
     {
+        id: 53,
+        countrycode: "CD",
+        title: "DR Congo: Life and Work under Menace",
+        url: "https://icsf.net/samudra-articles.php?id=10629",
+        type: "Article",
+        languages: ["English"],
+        location: ["DR Congo"],
+        terms: ["Women rights"],
+        authors: ["Rosine Nsimire Hamuli"],
+        collection: "Fisherwomen of the African Lakes",
+        annotation: "",
+        year: "2025",
+        featured: "",
+        featureImage: "",
+        featureDescription: "",
+    },
+    {
         id: 29,
         countrycode: "UG",
         title: "The Albertine Region Tracker",
@@ -794,9 +811,9 @@ export default [
         collection: "",
         annotation: "It forced me to explore the hypocritical, contradictory, fraudulent, violent side of global environmental policies. It showed me that science is not neutral and being called radical is a courtesy.",
         year: "2024",
-        featured: "no",
-        featureImage: "",
-        featureDescription: "",
+        featured: "yes",
+        featureImage: "/archive/images/carbon.jpg",
+        featureDescription: "An archive that exposes the physical, economic, psychological, epistemic violence that occur to individuals and communities living in areas where carbon offsetting projects are implemented, making accountable project developers, subsidiaries, investors, funders, validation and verification bodies, brokers, corporations purchasing credits",
     },
     {
         id: 49,
@@ -883,5 +900,4 @@ export default [
         featureImage: "",
         featureDescription: "",
     },
-
 ];
