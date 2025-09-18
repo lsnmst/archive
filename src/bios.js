@@ -27,7 +27,7 @@ const bios = {
         "Associate Programme Management Officer - Knowledge & Innovation at UN-Habitat",
     "Environmental Defenders":
         "Environmental conservation and human rights organization dedicated to protecting biodiversity and Indigenous Peoples’ rights in the Albertine Rift region, specifically the Murchison-Semliki, Greater Virunga, and Ituri landscapes, spanning the Democratic Republic of the Congo and Uganda, within the broader Congo Basin.<br/><br/>Website: <a target='blank' href='https://www.watetezi.org/'>Watetezi - Environmental Defenders</a>",
-    "Bugungu Heritage & Information Centre" :
+    "Bugungu Heritage & Information Centre":
         "Bugungu Heritage and Information Centre, established in 2013, is a community-based organization committed to the protection, promotion, and preservation of the cultural heritage of the Bagungu people.",
     "Francois Kamate Kasereka":
         "Young climate and human rights defender from North Kivu province, Democratic Republic of Congo. He is a co-founding member of Amani Institute ASBL and Extinction Rebellion Rutshuru and is active with various aligned groups and campaigns such as #SaveVirunga and LUCHACongo.org.",
@@ -48,9 +48,17 @@ const bios = {
     "Massimiliano Lepratti":
         "Coordinator and researcher in the field of ecological transition of the economy at Economia e sostenibilità (EStà).",
     "Roberto Romano":
-        "Economist",   
+        "Economist",
     "Chan Ku Ber Fur":
-        "Women farmers cooperative"
-    };
+        "Women farmers cooperative",
+    "Caterina Selva":
+        "Healer, writeress and researcher",
+    "Gabriel Weber":
+        "Architect, writer, researcher at Faculty of Architecture, University of Porto",
+    "CiDMobi":
+        "City, Law and Mobility Research Group affiliated to the Institute of Urban and Regional Planning (IPPUR) at the Federal University of Rio de Janeiro (UFRJ)",
+    "Observatório das Metrópoles":
+        "A National Institute of Science and Technology (INCT), based at the Federal University of Rio de Janeiro (UFRJ), which works systematically and coherently on the metropolitan challenges posed to national development, with a focus on understanding the changing relationships between society, the economy, the state, and the territories formed by Brazil's large urban agglomerations"
+};
 
 export default bios;

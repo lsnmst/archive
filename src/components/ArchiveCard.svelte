@@ -4,6 +4,7 @@
     const dispatch = createEventDispatcher();
     $: isFeatured = item.featured?.toLowerCase() === "yes";
     $: hasCollection = !!item.collection && item.collection.trim() !== "";
+    $: hasAnnotation = !!item.annotation && item.annotation.trim() !== "";
 </script>
 
 <tr>
@@ -71,9 +72,11 @@
     <td class:highlight={isFeatured} data-label="">
         {item.year}
     </td>
-    <td class="annotation" data-label="">
-        {item.annotation}
-    </td>
+    {#if hasAnnotation}
+        <td class="annotation" data-label="">
+            {item.annotation}
+        </td>
+    {/if}
 </tr>
 
 <style>
@@ -222,7 +225,7 @@
         }
         .featured-box {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             align-items: center;
             padding: 0.5rem;
             border: none;
@@ -240,10 +243,15 @@
         .highlight {
             background: none;
         }
-        .terms,
-        .annotation {
+        .terms {
             display: none;
         }
+        .annotation {
+            width: 88vw;
+            padding: 10px;
+            background: rgba(208, 255, 228, 1) !important;
+        }
+
         .type {
             width: unset;
             max-width: unset;

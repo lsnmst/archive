@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+
   import ArchiveCard from "./components/ArchiveCard.svelte";
   import AuthorPopup from "./components/AuthorPopup.svelte";
   import CollectionPopup from "./components/CollectionPopup.svelte";
@@ -237,6 +238,7 @@
     <b>Get in touch</b><br />hello@alessandromusetta.com <br /><a
       href="/archive/HgauJwTzvNjsxVS2P3oJX.asc">PGP KEY</a
     ><br />FINGERPRINT: D43A CD45 175E 79EA F11F D448 C90C 1302 EDCB 1889
+    <br /><br />
   </p>
 </div>
 
@@ -288,17 +290,17 @@
           Type <span>{sortKey === "type" ? (ascending ? "▲" : "▼") : "▲▼"}</span
           >
         </th>
-        <th class="non-sortable">Terms</th>
+        <th class="sortable" on:click={() => sortBy("terms")}>
+          Terms <span
+            >{sortKey === "terms" ? (ascending ? "▲" : "▼") : "▲▼"}</span
+          >
+        </th>
         <th class="sortable" on:click={() => sortBy("title")}>
           Title <span
             >{sortKey === "title" ? (ascending ? "▲" : "▼") : "▲▼"}</span
           >
         </th>
-        <th class="clickable" on:click={() => handleAuthorClick(author, false)}>
-          Co-actors <span
-            >{sortKey === "authors" ? (ascending ? "▲" : "▼") : "▲▼"}</span
-          >
-        </th>
+        <th class="non-sortable"> Co-actors</th>
         <th class="sortable" on:click={() => sortBy("year")}>
           Year<span>{sortKey === "year" ? (ascending ? "▲" : "▼") : "▲▼"}</span>
         </th>
@@ -375,6 +377,12 @@
     <a target="_blank" href="https://silviolorusso.com/">Silvio Lorusso</a>'s
     words. I thank all the people I have met along the path and those I will
     meet. Archive update 11th August 2025.
+
+    <br /><br /><br /><br />
+    <!--     <button on:click={() => window.print()}>
+      🖨 If you ask for a CV and portfolio,<br />please print archive here</button
+    >
+    -->
   </p>
 </div>
 
@@ -446,6 +454,7 @@
     font-style: normal;
     background-color: #f9faf6;
     text-align: center;
+    margin-bottom: 4rem;
   }
 
   table {
@@ -524,6 +533,21 @@
     color: #a255e9;
   }
 
+  .archive-section button {
+    padding: 0.4em 0.75em;
+    border-radius: 10px;
+    background-color: #f9faf6;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+    user-select: none;
+    border: 1px #a255e9 solid;
+  }
+  .archive-section button:hover {
+    background-color: #f2e4ff;
+    color: #a255e9;
+  }
+
   .multi-select {
     display: flex;
     flex-wrap: wrap;
@@ -565,7 +589,7 @@
     font-style: italic;
   }
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .archive {
       width: 98vh;
       padding: 0 !important;
