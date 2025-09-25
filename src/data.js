@@ -1,6 +1,23 @@
 export default [
     {
         id: 55,
+        countrycode: "UG",
+        title: "Ecofeminist Revolutionary Struggles amid Extractivist Conflicts in the Congo and Uganda",
+        url: "https://doi.org/10.1080/10455752.2025.2567586",
+        type: "Article",
+        languages: ["English"],
+        location: ["Uganda", "DR Congo"],
+        terms: ["Women rights"],
+        authors: ["Inge Konik", "Environmental Defenders"],
+        collection: "",
+        annotation: "",
+        year: "2025",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
+        id: 55,
         countrycode: "BR",
         title: "474, Jacaré Copacabana. Exercícios para decodificar o sistema de transportes através do uso crítico dos dados da Secretaria Municipal de Transportes da Prefeitura do Rio de Janeiro",
         url: "http://474.vado.li",

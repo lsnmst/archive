@@ -58,7 +58,9 @@ const bios = {
     "CiDMobi":
         "City, Law and Mobility Research Group affiliated to the Institute of Urban and Regional Planning (IPPUR) at the Federal University of Rio de Janeiro (UFRJ)",
     "Observatório das Metrópoles":
-        "A National Institute of Science and Technology (INCT), based at the Federal University of Rio de Janeiro (UFRJ), which works systematically and coherently on the metropolitan challenges posed to national development, with a focus on understanding the changing relationships between society, the economy, the state, and the territories formed by Brazil's large urban agglomerations"
+        "A National Institute of Science and Technology (INCT), based at the Federal University of Rio de Janeiro (UFRJ), which works systematically and coherently on the metropolitan challenges posed to national development, with a focus on understanding the changing relationships between society, the economy, the state, and the territories formed by Brazil's large urban agglomerations",
+    "Inge Konik":
+        "Associate professor in the Department of Philosophy at the Nelson Mandela University, South Africa, and associate editor for the journal Environmental Humanities"
 };
 
 export default bios;

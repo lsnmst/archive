@@ -218,34 +218,42 @@
     const titlePageHtml = `
     <div class="title-page" style="page-break-after: always; text-align: center; margin-top: 1vh; border-bottom:1px #ccc solid; margin-bottom: 1rem">
       <h1 style="font-size: 1.2rem; -webkit-text-stroke-width: 1px;-webkit-text-stroke-color: #444;-webkit-text-fill-color: #f0f0f000;">Alessandro<br></h1>
-        <p style="font-size: 0.8rem; margin-bottom:2vh;"><b>Amplify voices from marginalised communities, building solidariety through collective actions.</b>
-          <br/><br /><i>Get in touch</i><br />hello@alessandromusetta.com <br /><a href="/archive/HgauJwTzvNjsxVS2P3oJX.asc">PGP KEY</a>
-          <br /></p>
+      <p style="font-size: 0.8rem; margin-bottom:2vh;">
+        <b>Amplify voices from marginalised communities, building solidarity through collective actions.</b>
+        <br/><br /><i>Get in touch</i><br />hello@alessandromusetta.com
+        <br />
+      </p>
     </div>
   `;
 
     const entriesHtml = sortedData
-      .map((item) => {
-        const authors =
-          item.authors && item.authors.length ? item.authors.join(", ") : "";
-        const collection = item.collection ? item.collection : "";
-        const type = item.type ? item.type : "";
-        const year = item.year ? item.year : "N/A";
+      .map((item, index) => {
+        const authors = item.authors ? item.authors.join(", ") : "";
+        const collection = item.collection || "";
+        const type = item.type || "";
+        const year = item.year || "N/A";
         const titleText = item.title || "No title";
+        const entryId = item.id || "entry-" + index;
+        const url = item.url || "";
 
-        let titleHtml = titleText;
-        let urlHtml = "";
-        if (item.url) {
-          titleHtml = `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${titleText}</a>`;
-          urlHtml = `<span style="font-size:0.7rem; margin-left:0.5rem; color:blue;">${item.url}</span>`;
-        }
+        const titleHtml = url
+          ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${titleText}</a>`
+          : titleText;
+
+        const qrHtml = item.url
+          ? `<div style="flex-shrink:0; text-align:right;">
+             <img src="https://quickchart.io/qr?text=${encodeURIComponent(item.url)}&size=80" 
+            alt="QR code for ${item.title}" 
+            style="width:80px; height:80px;">
+            </div>`
+          : "";
 
         const featuredImageHtml = item.featureImage
           ? `<div style="margin-bottom:0.5rem;">
-       <img src="${item.featureImage}" 
-            alt="Featured image" 
-            style="max-width:100%; height:auto; filter: grayscale(100%);">
-     </div>`
+             <img src="${item.featureImage}" 
+                  alt="Featured image" 
+                  style="max-width:100%; height:auto; filter: grayscale(100%);">
+           </div>`
           : "";
 
         return `
@@ -253,7 +261,7 @@
           ${featuredImageHtml}
           <p>${year}</p>
           <p><b>${type}</b></p>
-          <h3 style="display: flex; align-items: center; gap: 0.5rem;">${titleHtml}</h3>
+          <div style="display: flex; justify-content: space-between; align-items: center; gap:0.5rem"><h3>${titleHtml}</h3>${qrHtml}</div>
           ${authors ? `<p>With: ${authors}</p>` : ""}
           ${collection ? `<p style="background-color:#80808020;">Collection: <i>${collection}</i></p>` : ""}
         </div>
@@ -264,16 +272,16 @@
     const html = `
     <html>
       <head>
-        <title>Alessandro - Amplify voices from marginalised communities, building solidariety through collective actions</title>
+        <title>Alessandro - Amplify voices from marginalised communities</title>
         <link rel="stylesheet" href="./app.css">
         <style>
-          body { font-family: Georgia, sans-serif; font-size: 0.7rem; line-height: 1.2; margin: 1rem; }
+          body { font-family: Georgia, sans-serif; font-size: 0.75rem; line-height: 1.2; margin: 0.2rem; }
           .print-layout { column-count: 3; column-gap: 2rem; }
           .entry { break-inside: avoid; margin-bottom: 1rem; border-bottom: 1px dotted #ccc; padding: 0.25rem; }
           h3 { font-size: 0.9rem; font-style: italic; margin: 0 0 0.3rem; }
           p { margin: 0 0 0.2rem; }
           a { color: black; text-decoration: none; }
-          @media print {@page { size: A1 portrait; margin: 2cm;}}
+          @media print {@page { size: A1 portrait; margin: 0.25cm;}}
         </style>
       </head>
       <body>
