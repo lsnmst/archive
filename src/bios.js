@@ -60,7 +60,9 @@ const bios = {
     "Observatório das Metrópoles":
         "A National Institute of Science and Technology (INCT), based at the Federal University of Rio de Janeiro (UFRJ), which works systematically and coherently on the metropolitan challenges posed to national development, with a focus on understanding the changing relationships between society, the economy, the state, and the territories formed by Brazil's large urban agglomerations",
     "Inge Konik":
-        "Associate professor in the Department of Philosophy at the Nelson Mandela University, South Africa, and associate editor for the journal Environmental Humanities"
+        "Associate professor in the Department of Philosophy at the Nelson Mandela University, South Africa, and associate editor for the journal Environmental Humanities",
+    "Seichú astronomical observatory":
+        "Brazil's first and unique observatory dedicated to cultural astronomy, with a mission to raise global awareness of how ancient peoples acquired sophisticated knowledge of the cosmos. <br/><br/>Website: <a target='blank' href='https://observatorioseichu.com.br/'>Observatório Astronômico Seichú</a>"
 };
 
 export default bios;

@@ -1,5 +1,22 @@
 export default [
     {
+        id: 56,
+        countrycode: "🌏︎",
+        title: "Sky-dome Animation of the 2026 Ephemerides in the Tupi-Guarani Indigenous Astronomical Culture",
+        url: "https://github.com/lsnmst/ephemerides-2026-tupi-guarani-stellar-culture",
+        type: "Scientific illustration",
+        languages: ["English"],
+        location: ["🌏︎"],
+        terms: ["Cultural astronomy"],
+        authors: ["Seichú astronomical observatory"],
+        collection: "",
+        annotation: "",
+        year: "2025",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
         id: 55,
         countrycode: "UG",
         title: "Ecofeminist Revolutionary Struggles amid Extractivist Conflicts in the Congo and Uganda",
