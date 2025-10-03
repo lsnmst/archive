@@ -310,7 +310,7 @@
   </div>
   <div class="header-description">
     <p>
-      Amplify voices from marginalised communities, building solidariety through
+      Amplify voices from marginalised communities, building solidarity through
       collective actions.
     </p>
   </div>
