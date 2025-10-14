@@ -1,5 +1,22 @@
 export default [
     {
+        id: 57,
+        countrycode: "CD",
+        title: "Système d'alerte de déforestation de l'île d'Idjwi",
+        url: "https://lsnmst.github.io/idjwi-alert-system/frontend/",
+        type: "Investigative platform",
+        languages: ["Français"],
+        location: ["DR Congo"],
+        terms: ["Forest resources management"],
+        authors: ["Emmanuel Ndimwiza Murhonyi"],
+        collection: "",
+        annotation: "",
+        year: "2025",
+        featured: "yes",
+        featureImage: "/archive/images/GLAD.jpg",
+        featureDescription: "Idjwi Island is considered the island of pacification between enemy lines. In a conflict that has lasted for decades, it has never been the scene of battles, thus becoming the only secure sacred natural site among all the communities bordering Lake Kivu. Following initial concerns expressed by the communities living on the island about recent unbalanced exploitation of natural and forest resources, we have set up an alert system so communities can monitor the island."
+    },
+    {
         id: 56,
         countrycode: "🌏︎",
         title: "Sky-dome Animation of the 2026 Ephemerides in the Tupi-Guarani Indigenous Astronomical Culture",
