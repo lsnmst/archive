@@ -12,7 +12,7 @@ const bios = {
     "Terminalia":
         "Terminalia is a nomadic project that traverses the marginal territories of the Marche region's mainland, activating public worksites and events within them.",
     "Onda Verde":
-        "Organização não governamental que dissemina informações sobre o meio ambiente e a sustentabilidade, atua na conservação da diversidade biológica do bioma da Mata Atlântica e promove ações para o desenvolvimento sustentável.<br/><br/>Website: <a target='blank' href='https://www.ondaverde.org.br/'>Onda Verde</a>",
+        "Brazilian non-governmental organisation that disseminates information about the environment and sustainability, works to conserve the biological diversity of the Atlantic Forest biome, and promotes actions for sustainable development.<br/><br/>Website: <a target='blank' href='https://www.ondaverde.org.br/'>Onda Verde</a>",
     "Antonella Contin":
         "Arch. Ph.D. is Research Associate at DAStU / Department of Architecture and Urban Studies, School of Architecture Urban Planning Construction Engineering at University of Politecnico di Milano.",
     "Matteo Giacomelli":
@@ -28,7 +28,7 @@ const bios = {
     "Environmental Defenders":
         "Environmental conservation and human rights organization dedicated to protecting biodiversity and Indigenous Peoples’ rights in the Albertine Rift region, specifically the Murchison-Semliki, Greater Virunga, and Ituri landscapes, spanning the Democratic Republic of the Congo and Uganda, within the broader Congo Basin.<br/><br/>Website: <a target='blank' href='https://www.watetezi.org/'>Watetezi - Environmental Defenders</a>",
     "Bugungu Heritage & Information Centre":
-        "Bugungu Heritage and Information Centre, established in 2013, is a community-based organization committed to the protection, promotion, and preservation of the cultural heritage of the Bagungu people.",
+        "Community-based organization committed to the protection, promotion, and preservation of the cultural heritage of the Bagungu people.",
     "Francois Kamate Kasereka":
         "Young climate and human rights defender from North Kivu province, Democratic Republic of Congo. He is a co-founding member of Amani Institute ASBL and Extinction Rebellion Rutshuru and is active with various aligned groups and campaigns such as #SaveVirunga and LUCHACongo.org.",
     "Pamella Lakidi Achan":
@@ -65,6 +65,6 @@ const bios = {
         "Brazil's first and unique observatory dedicated to cultural astronomy, with a mission to raise global awareness of how ancient peoples acquired sophisticated knowledge of the cosmos. <br/><br/>Website: <a target='blank' href='https://observatorioseichu.com.br/'>Observatório Astronômico Seichú</a>",
     "Emmanuel Ndimwiza Murhonyi":
         "Researcher in environmental sociology and grassroots organizer of the Idjwi Island",
-    };
+};
 
 export default bios;

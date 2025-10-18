@@ -2,7 +2,7 @@ export default [
     {
         id: 57,
         countrycode: "CD",
-        title: "Système d'alerte de déforestation de l'île d'Idjwi",
+        title: "Deforestation Alert System of the Idjwi Island",
         url: "https://lsnmst.github.io/idjwi-alert-system/frontend/",
         type: "Investigative platform",
         languages: ["Français"],
@@ -53,7 +53,7 @@ export default [
     {
         id: 55,
         countrycode: "BR",
-        title: "474, Jacaré Copacabana. Exercícios para decodificar o sistema de transportes através do uso crítico dos dados da Secretaria Municipal de Transportes da Prefeitura do Rio de Janeiro",
+        title: "474, Jacaré Copacabana. Exercises to Decode the Transportation System through the Critical Use of data from the Municipal Transportation Secretariat of the City of Rio de Janeiro",
         url: "http://474.vado.li",
         type: "Workshop",
         languages: ["Português"],
@@ -359,7 +359,7 @@ export default [
     {
         id: 19,
         countrycode: "BR",
-        title: "A Paisagem Sonora da Floresta do Tinguá",
+        title: "The Soundscape of the Tinguá Forest",
         url: "https://www.alessandromusetta.com/cloud/LSNMST_paisagem-sonora-floresta-tingua.pdf",
         type: "Workshop",
         languages: ["Português"],
@@ -784,7 +784,7 @@ export default [
     {
         id: 51,
         countrycode: "CD",
-        title: "Carte du Tourisme Écoculturel et Spirituel de l'Île d'Idjwi",
+        title: "Ecocultural Tourism and Spiritual Map of the Idjwi Island",
         url: "https://lsnmst.github.io/idjwi/",
         type: "Prototype",
         languages: ["Français"],
