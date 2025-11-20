@@ -468,7 +468,7 @@
     by
     <a target="_blank" href="https://silviolorusso.com/">Silvio Lorusso</a>'s
     words. I thank all the people I have met along the path and those I will
-    meet. Archive update 11th August 2025.
+    meet. Archive update 20th November 2025.
 
     <br /><br /><br /><br />
     <button on:click={printArchive}>

@@ -1,5 +1,22 @@
 export default [
     {
+        id: 58,
+        countrycode: "NG",
+        title: "Cosmoscape of the Yoruba plants",
+        url: "https://lsnmst.github.io/ewe/",
+        type: "Prototype",
+        languages: ["English", "Yoruba"],
+        location: ["Nigeria"],
+        terms: ["Traditional ecological knowledge", "Cosmology"],
+        authors: null,
+        collection: "",
+        annotation: "",
+        year: "2025",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
         id: 57,
         countrycode: "CD",
         title: "Deforestation Alert System of the Idjwi Island",
@@ -786,7 +803,7 @@ export default [
         countrycode: "CD",
         title: "Ecocultural Tourism and Spiritual Map of the Idjwi Island",
         url: "https://lsnmst.github.io/idjwi/",
-        type: "Prototype",
+        type: "Map",
         languages: ["Français"],
         location: ["DR Congo"],
         terms: ["Environmental education", "Cultural tourism"],
