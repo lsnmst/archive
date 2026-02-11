@@ -65,6 +65,8 @@ const bios = {
         "Brazil's first and unique observatory dedicated to cultural astronomy, with a mission to raise global awareness of how ancient peoples acquired sophisticated knowledge of the cosmos. <br/><br/>Website: <a target='blank' href='https://observatorioseichu.com.br/'>Observatório Astronômico Seichú</a>",
     "Emmanuel Ndimwiza Murhonyi":
         "Researcher in environmental sociology and grassroots organizer of the Idjwi Island",
+    "Comité de Gestion de la Réserve Naturelle d'Idjwi-Nyamusisi":
+        "The Idjwi-Nyamusisi Nature Reserve is a community reserve of local interest managed by the Ntambuka Chiefdom and Rubenga Chiefdom, established by decree of the Province of South Kivu No. 22/131/GP/SK of 20 May 2022.",
 };
 
 export default bios;

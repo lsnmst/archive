@@ -1,5 +1,22 @@
 export default [
     {
+        id: 61,
+        countrycode: "CD",
+        title: "Bringing a lost reserve back to a living landscape. Restoration and community management of the Nyamusisi Forest Reserve",
+        url: "https://lsnmst.github.io/nyamusisi",
+        type: "Report",
+        languages: ["Français", "English"],
+        location: ["DR Congo"],
+        terms: ["Forest resources management"],
+        authors: ["Comité de Gestion de la Réserve Naturelle d'Idjwi-Nyamusisi"],
+        collection: "Idjwi, the island of peace between enemy lines",
+        annotation: "",
+        year: "2026",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
         id: 60,
         countrycode: "NG",
         title: "Cosmoscape of the Yoruba plants",
