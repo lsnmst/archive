@@ -67,6 +67,8 @@ const bios = {
         "Researcher in environmental sociology and grassroots organizer of the Idjwi Island",
     "Comité de Gestion de la Réserve Naturelle d'Idjwi-Nyamusisi":
         "The Idjwi-Nyamusisi Nature Reserve is a community reserve of local interest managed by the Ntambuka Chiefdom and Rubenga Chiefdom, established by decree of the Province of South Kivu No. 22/131/GP/SK of 20 May 2022.",
+    "Mama Ni Mama":
+        "Women-focused NGO deeply embedded in local communities of the North and South Kivu provinces of the Democratic Rupublic of the Congo"
 };
 
 export default bios;

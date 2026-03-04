@@ -1,8 +1,25 @@
 export default [
     {
+        id: 62,
+        countrycode: "CD",
+        title: "Participatory Menstrual Diary in North and South Kivu",
+        url: "https://participatory-menstrual-diary.netlify.app/",
+        type: "Project",
+        languages: ["Français", "English"],
+        location: ["DR Congo"],
+        terms: ["Women right"],
+        authors: ["Alliance pour la Vie", "Mama Ni Mama"],
+        collection: "",
+        annotation: "A tribute to the courage of the women from the Kivus 🙏",
+        year: "2026",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
         id: 61,
         countrycode: "CD",
-        title: "Bringing a lost reserve back to a living landscape. Restoration and community management of the Nyamusisi Forest Reserve",
+        title: "Bringing a Lost Reserve Back to a Living Landscape. Restoration and Community Management of the Nyamusisi Forest Reserve",
         url: "https://lsnmst.github.io/nyamusisi",
         type: "Report",
         languages: ["Français", "English"],
