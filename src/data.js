@@ -1,5 +1,22 @@
 export default [
     {
+        id: 63,
+        countrycode: "CD",
+        title: "Système d'alerte de déforestation dans le territoire de Mahagi",
+        url: "https://lsnmst.github.io/mahagi-alert-system/",
+        type: "Investigative platform",
+        languages: ["Français"],
+        location: ["DR Congo"],
+        terms: ["Forest resources management"],
+        authors: ["Deogratias Ucima Wonyarossi", "Environmental Defenders"],
+        collection: "",
+        annotation: "",
+        year: "2026",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
         id: 62,
         countrycode: "CD",
         title: "Participatory Menstrual Diary in North and South Kivu",
