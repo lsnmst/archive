@@ -2,7 +2,7 @@ export default [
     {
         id: 63,
         countrycode: "CD",
-        title: "Système d'alerte de déforestation dans le territoire de Mahagi",
+        title: "Deforestation Alert System of the Mahagi Territory",
         url: "https://lsnmst.github.io/mahagi-alert-system/",
         type: "Investigative platform",
         languages: ["Français"],
