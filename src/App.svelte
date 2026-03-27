@@ -731,7 +731,7 @@
     .header-title,
     .header-description {
       max-width: 100%;
-      display: inherit;
+      display: unset;
       text-align: start !important;
     }
     .archive-section {
