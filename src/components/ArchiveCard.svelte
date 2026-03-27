@@ -146,7 +146,7 @@
     }
     .featured-desc {
         font-size: 1rem !important;
-        line-height: 1rem;
+        line-height: 1.05rem;
         text-align: left;
         color: #444;
         font-style: italic;
@@ -232,7 +232,7 @@
             gap: 0.5rem;
         }
         .featured-img {
-            max-width: 90%;
+            width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;

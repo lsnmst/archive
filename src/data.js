@@ -29,9 +29,9 @@ export default [
         collection: "",
         annotation: "A tribute to the courage of the women from the Kivus 🙏",
         year: "2026",
-        featured: "no",
-        featureImage: "",
-        featureDescription: ""
+        featured: "yes",
+        featureImage: "/archive/images/diary.jpg",
+        featureDescription: "A simple, culturally adapted menstrual diary that empower Congolese women to record cycles, symptoms, emotional load, hygiene access challenges, and contextual stressors daily, bridging gaps in menstrual literacy, aiding in self-care, and strengthening communication with health providers."
     },
     {
         id: 61,
@@ -82,8 +82,7 @@ export default [
         year: "2025",
         featured: "yes",
         featureImage: "/archive/images/GLAD.jpg",
-        featureDescription: "Idjwi Island is considered the island of pacification between enemy lines. In a conflict that has lasted for decades, it has never been the scene of battles, thus becoming the only secure sacred natural site among all the communities bordering Lake Kivu. Following initial concerns expressed by the communities living on the island about recent unbalanced exploitation of natural and forest resources, we have set up an alert system so communities can monitor the island."
-    },
+        featureDescription: "Idjwi Island has remained untouched by conflict for decades; the only secure sacred natural site among the communities of Lake Kivu. As unbalanced exploitation of forest resources raised alarm, we built an alert system so communities can monitor their land."    },
     {
         id: 58,
         countrycode: "NG",
@@ -136,7 +135,7 @@ export default [
         featureDescription: ""
     },
     {
-        id: 55,
+        id: 955,
         countrycode: "UG",
         title: "Ecofeminist Revolutionary Struggles amid Extractivist Conflicts in the Congo and Uganda",
         url: "https://doi.org/10.1080/10455752.2025.2567586",
@@ -323,7 +322,7 @@ export default [
         featureDescription: "",
     },
     {
-        id: 12,
+        id: 912,
         countrycode: "NG",
         title: "Eco-climate Memory of Yam Production of Izzi People, Southest Nigeria",
         url: null,

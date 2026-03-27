@@ -300,7 +300,7 @@
   }
 </script>
 
-<div class="header-section">
+<div class="header-section" style="margin-bottom: 10vh;">
   <div class="header-title">
     <h1>
       <a href="/archive/" style="text-decoration:none; color:inherit;">
@@ -308,13 +308,20 @@
       </a>
     </h1>
   </div>
-  <div class="header-description">
+  <div class="header-description" style="text-align: end;">
     <p>
-      Amplify voices from marginalised communities, building solidarity through
-      collective actions.
+      Cartographer, data storyteller and researcher working in solidarity with
+      Indigenous and grassroots communities across Africa and Latin America. I
+      build maps, investigative platforms and participatory tools that put
+      knowledge back in the hands of the people it belongs to.
+    </p>
+    <p style="font-size: 0.9rem;margin-top: 1rem;">
+      hello@alessandromusetta.com
     </p>
   </div>
 </div>
+
+<!-- 
 <div class="archive-section">
   <p>
     <b>Why an archive instead of a promo? </b><br />If you were expecting a
@@ -333,6 +340,7 @@
     <br /><br />
   </p>
 </div>
+ -->
 
 <div class="filters">
   <input type="text" placeholder="Search…" bind:value={search} />
@@ -439,6 +447,25 @@
     onClose={closePopup}
   />
 {/if}
+
+<div class="archive-section">
+  <p>
+    <b>Why an archive instead of a promo? </b><br />If you were expecting a
+    promo, you've hit an archive. The archive is a personal, intimate,
+    authentic, sentimental, non-romanticised, political, urgent, grave
+    alternative to a promo, designed to learn about myself and inspire others to
+    build together. Aimed at organise ideas, imagine new paths, celebrate fellow
+    comrades and build bridges. It opposes the short and simple argument,
+    requiring time and an exploratory strategy, along with a generous share of
+    curiosity. Fair winds.
+  </p>
+  <p style="font-size: 0.9rem;">
+    <b>Get in touch</b><br />hello@alessandromusetta.com <br /><a
+      href="/archive/HgauJwTzvNjsxVS2P3oJX.asc">PGP KEY</a
+    ><br />FINGERPRINT: D43A CD45 175E 79EA F11F D448 C90C 1302 EDCB 1889
+    <br /><br />
+  </p>
+</div>
 
 <div class="archive-section">
   <p>
@@ -705,6 +732,7 @@
     .header-description {
       max-width: 100%;
       display: inherit;
+      text-align: start !important;
     }
     .archive-section {
       margin-top: 0;
