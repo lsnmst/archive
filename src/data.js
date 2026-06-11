@@ -1,5 +1,39 @@
 export default [
     {
+        id: 65,
+        countrycode: "🌏︎",
+        title: "Cycles of Care. A Menstrual Rematriation Archive",
+        url: "https://lsnmst.github.io/cycles-of-care/",
+        type: "Project",
+        languages: ["English"],
+        location: ["🌏︎"],
+        terms: ["Body-territory", "Traditional ecological knowledge"],
+        authors: [""],
+        collection: "",
+        annotation: "",
+        year: "2026",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
+        id: 64,
+        countrycode: "BR",
+        title: "Tupi-Guarani' Stellarstories",
+        url: "https://lsnmst.github.io/cultura-estelar/",
+        type: "Map",
+        languages: ["Português"],
+        location: ["Brazil"],
+        terms: ["Cultural astronomy"],
+        authors: ["Seichú astronomical observatory", "Maybí Machacalis"],
+        collection: "",
+        annotation: "",
+        year: "2026",
+        featured: "yes",
+        featureImage: "/archive/images/stellarstories.png",
+        featureDescription: "A geostory app designed to celebrate the living science of the Tupi-Guarani indigenous peoples, sharing their knowledge of observing the sky."
+    },
+    {
         id: 63,
         countrycode: "CD",
         title: "Deforestation Alert System of the Mahagi Territory",
@@ -51,6 +85,23 @@ export default [
         featureDescription: ""
     },
     {
+        id: 609,
+        countrycode: "UG",
+        title: "Atlas of the Bugungu People",
+        url: "https://lsnmst.github.io/bugungu-atlas/",
+        type: "Map",
+        languages: ["English"],
+        location: ["Uganda"],
+        terms: ["Cultural tourism"],
+        authors: ["Bugungu Heritage & Information Centre"],
+        collection: "",
+        annotation: "",
+        year: "2025",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
         id: 60,
         countrycode: "NG",
         title: "Cosmoscape of the Yoruba plants",
@@ -82,7 +133,8 @@ export default [
         year: "2025",
         featured: "yes",
         featureImage: "/archive/images/GLAD.jpg",
-        featureDescription: "Idjwi Island has remained untouched by conflict for decades; the only secure sacred natural site among the communities of Lake Kivu. As unbalanced exploitation of forest resources raised alarm, we built an alert system so communities can monitor their land."    },
+        featureDescription: "Idjwi Island has remained untouched by conflict for decades; the only secure sacred natural site among the communities of Lake Kivu. As unbalanced exploitation of forest resources raised alarm, we built an alert system so communities can monitor their land."
+    },
     {
         id: 58,
         countrycode: "NG",

@@ -70,7 +70,9 @@ const bios = {
     "Mama Ni Mama":
         "Women-focused NGO deeply embedded in local communities of the North and South Kivu provinces of the Democratic Rupublic of the Congo",
     "Deogratias Ucima Wonyarossi":
-        "Eco-epidemiologist specializing in the study of infectious diseases in tropical ecosystems. Clinical trials coordinator at the Center for Research on Tropical Diseases (CRMT) in the Ituri of the Democratic Republic of the Congo"
+        "Eco-epidemiologist specializing in the study of infectious diseases in tropical ecosystems. Clinical trials coordinator at the Center for Research on Tropical Diseases (CRMT) in the Ituri of the Democratic Republic of the Congo",
+    "Maybí Machacalis":
+        "An Indigenous astronomer and artist from the Maxakali people"    
 };
 
 export default bios;

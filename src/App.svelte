@@ -219,7 +219,7 @@
     <div class="title-page" style="page-break-after: always; text-align: center; margin-top: 1vh; border-bottom:1px #ccc solid; margin-bottom: 1rem">
       <h1 style="font-size: 1.2rem; -webkit-text-stroke-width: 1px;-webkit-text-stroke-color: #444;-webkit-text-fill-color: #f0f0f000;">Alessandro<br></h1>
       <p style="font-size: 0.8rem; margin-bottom:2vh;">
-        <b>Amplify voices from marginalised communities, building solidarity through collective actions.</b>
+        <b>Cartographer, data storyteller and researcher working in solidarity with Indigenous and grassroots communities across Africa and Latin America. I build maps, investigative platforms and participatory tools that put knowledge back in the hands of the people it belongs to.</b>
         <br/><br /><i>Get in touch</i><br />hello@alessandromusetta.com
         <br />
       </p>
@@ -495,7 +495,7 @@
     by
     <a target="_blank" href="https://silviolorusso.com/">Silvio Lorusso</a>'s
     words. I thank all the people I have met along the path and those I will
-    meet. Archive update 4th March 2026.
+    meet. Archive update 11th June 2026.
 
     <br /><br /><br /><br />
     <button on:click={printArchive}>
