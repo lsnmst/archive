@@ -64,7 +64,7 @@
       selectedType = "";
       selectedLanguages = "";
       selectedLoc = "";
-      selectedTerms.clear();
+      selectedTerms = new Set();
     }
   }
 
@@ -112,7 +112,7 @@
       item.authors?.join(" "),
       item.terms?.join(" "),
       item.languages?.join(" "),
-      item.locations?.join(" "),
+      item.location?.join(" "),
       item.type,
       item.annotation,
     ]
@@ -191,20 +191,41 @@
 
   $: if (mounted) updateURL();
 
+  $: {
+    search;
+    selectedType;
+    selectedLanguages;
+    selectedLoc;
+    selectedAuthorFilter;
+    selectedTerms;
+
+    if (mounted) {
+      updateURL();
+    }
+  }
+
   function updateURL() {
+    if (!mounted) return;
+
     const params = new URLSearchParams();
+
     if (search) params.set("search", search);
     if (selectedType) params.set("type", selectedType);
     if (selectedLanguages) params.set("lang", selectedLanguages);
     if (selectedLoc) params.set("loc", selectedLoc);
     if (selectedAuthorFilter) params.set("author", selectedAuthorFilter);
-    if (selectedTerms.size) params.set("terms", [...selectedTerms].join(","));
+
+    if (selectedTerms.size > 0) {
+      params.set("terms", Array.from(selectedTerms).join(","));
+    }
 
     const query = params.toString();
-    const newURL = query
+
+    const url = query
       ? `${window.location.pathname}?${query}`
       : window.location.pathname;
-    history.replaceState(null, "", newURL);
+
+    window.history.replaceState({}, "", url);
   }
 
   function printArchive() {
