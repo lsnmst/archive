@@ -818,7 +818,7 @@ export default [
     {
         id: 36,
         countrycode: "CD",
-        title: "Amplifier la Voix des Leaders Culturels dans le Territoire de Rutshuru de la République Démocratique du Congo",
+        title: "Amplifying the Voices of Cultural Leaders in the Rutshuru Territory of the DR Congo",
         url: "https://xrrutshuru.github.io/voix/index.html",
         type: "Prototype",
         languages: ["English", "Français"],
