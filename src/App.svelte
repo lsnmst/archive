@@ -332,9 +332,9 @@
   <div class="header-description" style="text-align: end;">
     <p>
       Cartographer, data storyteller and researcher working in solidarity with
-      marginalized, traditional and Indigenous communities across Africa and
-      Latin America. I build maps, investigative platforms and participatory
-      tools that put knowledge back in the hands of the people it belongs to.
+      marginalized, traditional and Indigenous communities. I build maps,
+      investigative platforms and participatory tools that put knowledge back in
+      the hands of the people it belongs to.
     </p>
     <p style="font-size: 0.9rem;margin-top: 1rem;">
       hello@alessandromusetta.com
