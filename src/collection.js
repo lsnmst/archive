@@ -8,7 +8,9 @@ const collection = {
     "Yoruba plants & cosmology":
         "A collection exploring traditional knowledge of Yoruba plants, outside of Western epistemology and its hegemonic influence on ethnobotanical sciences.",
     "Idjwi, the island of peace between enemy lines":
-        "The collection dedicated to the Idjwi Island, the sacred natural site on Lake Kivu that resists the armed conflict of the African Great Lakes."
+        "The collection dedicated to the Idjwi Island, the sacred natural site on Lake Kivu that resists the armed conflict of the African Great Lakes.",
+    "Ask Ken Fern":
+        "A collection of tools designed to popularise the alternative uses of plants that Western industry and science have naturalised or labelled as useless.",
 };
 
 export default collection;

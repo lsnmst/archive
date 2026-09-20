@@ -72,7 +72,9 @@ const bios = {
     "Deogratias Ucima Wonyarossi":
         "Eco-epidemiologist specializing in the study of infectious diseases in tropical ecosystems. Clinical trials coordinator at the Center for Research on Tropical Diseases (CRMT) in the Ituri of the Democratic Republic of the Congo",
     "Maybí Machacalis":
-        "An Indigenous astronomer and artist from the Maxakali people"    
+        "An Indigenous astronomer and artist from the Maxakali people",
+    "Ken Fern":
+        "Plant enthusiast and pioneer organic gardener, trialing over 2,000 unusual species which are edible or have other uses.",    
 };
 
 export default bios;
