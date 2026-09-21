@@ -1,6 +1,6 @@
 export default [
     {
-        id: 67,
+        id: 68,
         countrycode: "🌏︎",
         title: "AKF. A Field Lookup for Edible and Non-colonised Edible Plants in Europe",
         url: "https://lsnmst.github.io/ask-ken-fern/",
@@ -17,7 +17,7 @@ export default [
         featureDescription: ""
     },
     {
-        id: 66,
+        id: 67,
         countrycode: "🌏︎",
         title: "Cycles of Care. A Menstrual Rematriation Archive",
         url: "https://lsnmst.github.io/cycles-of-care/",
@@ -34,7 +34,7 @@ export default [
         featureDescription: ""
     },
     {
-        id: 65,
+        id: 66,
         countrycode: "🌏︎",
         title: "AKF. A Field Lookup for Natural Dye Plants in Europe",
         url: "https://lsnmst.github.io/ask-ken-fern-about-dyeing/",
@@ -44,6 +44,23 @@ export default [
         terms: ["Traditional ecological knowledge"],
         authors: ["Ken Fern"],
         collection: "Ask Ken Fern",
+        annotation: "",
+        year: "2026",
+        featured: "no",
+        featureImage: "",
+        featureDescription: ""
+    },
+    {
+        id: 65,
+        countrycode: "CD",
+        title: "Idjwi Island Spatial Ecological Degradation Model. A Hybrid Framework for Ecological Degradation and Driver Attribution on Idjwi Island",
+        url: "https://zenodo.org/records/22746713",
+        type: "Software",
+        languages: ["English"],
+        location: ["DR Congo"],
+        terms: ["Forest resources management"],
+        authors: ["Arnold Bisimwa Ngabo", "Leonard Mubalama Kakira", "Ziga Zigashane Bugeme"],
+        collection: "Idjwi, the island of peace between enemy lines",
         annotation: "",
         year: "2026",
         featured: "no",

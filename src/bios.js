@@ -75,6 +75,12 @@ const bios = {
         "An Indigenous astronomer and artist from the Maxakali people",
     "Ken Fern":
         "Plant enthusiast and pioneer organic gardener, trialing over 2,000 unusual species which are edible or have other uses.",    
+    "Arnold Bisimwa Ngabo":
+        "Director of the Idjwi-Nyamusisi Nature Reserve, researcher at the Université Catholique de Bukavu",
+    "Leonard Mubalama Kakira":
+        "Head of the Department of Environment and Sustainable Development and Director of the Research Centre for Biodiversity Management and Climate Change, ISDR/Bukavu",
+    "Ziga Zigashane Bugeme":
+        "Lecturer-researcher at ISDR-Bukavu - Institut Supérieur de Développement Rural de Bukavu",
 };
 
 export default bios;
